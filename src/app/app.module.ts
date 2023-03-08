@@ -18,6 +18,7 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
 import { TrainingComponent } from './components/training/training.component';
 import { StopTrainingComponent } from './components/training/stop-training/stop-training.component';
 import { AuthService } from './auth/auth-service';
+import { ExerciseService } from './components/training/exercise.service';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,7 @@ import { AuthService } from './auth/auth-service';
     ReactiveFormsModule,
     FlexModule,
   ],
-  providers: [AuthService],
+  providers: [AuthService, ExerciseService],
   bootstrap: [AppComponent],
   entryComponents:[StopTrainingComponent]
 })
