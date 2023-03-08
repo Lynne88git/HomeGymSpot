@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from './material.module';
+import { SignupComponent } from './auth/signup/signup.component';
+import { LoginComponent } from './auth/login/login.component';
 import { FlexModule } from '@angular/flex-layout';
 import { HeaderComponent } from './navigation/header/header.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
@@ -15,10 +17,13 @@ import { CurrentTrainingComponent } from './components/training/current-training
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { TrainingComponent } from './components/training/training.component';
 import { StopTrainingComponent } from './components/training/stop-training/stop-training.component';
+import { AuthService } from './auth/auth-service';
 
 @NgModule({
   declarations: [
     AppComponent,
+    SignupComponent,
+    LoginComponent,
     HeaderComponent,
     SidenavListComponent,
     TrainingComponent,
@@ -37,7 +42,7 @@ import { StopTrainingComponent } from './components/training/stop-training/stop-
     ReactiveFormsModule,
     FlexModule,
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent],
   entryComponents:[StopTrainingComponent]
 })

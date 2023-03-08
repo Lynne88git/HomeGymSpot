@@ -18,15 +18,14 @@ import { MatDialogModule } from '@angular/material/dialog';
 
 
 @NgModule({
-  declarations: [],
   imports: [
     CommonModule,
-    MatButtonModule, 
-    MatIconModule, 
-    MatFormFieldModule, 
-    MatInputModule, 
-    MatDatepickerModule, 
-    MatNativeDateModule, 
+    MatButtonModule,
+    MatIconModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
     MatCheckboxModule,
     MatSidenavModule,
     MatToolbarModule,
@@ -38,12 +37,12 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatDialogModule
   ], 
   exports: [ 
-    MatButtonModule, 
-    MatIconModule, 
-    MatFormFieldModule, 
-    MatInputModule, 
-    MatDatepickerModule, 
-    MatNativeDateModule, 
+    MatButtonModule,
+    MatIconModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
     MatCheckboxModule,
     MatSidenavModule,
     MatToolbarModule,
